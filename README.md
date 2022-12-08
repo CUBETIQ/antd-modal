@@ -14,12 +14,12 @@ Modal from Ant Design, draggable, resizable.
 </div>
 
 <div align="center">
-<a href="https://distracted-hugle-66cb55.netlify.com/">
+<!-- <a href="https://distracted-hugle-66cb55.netlify.com/"> -->
 <img src="https://user-images.githubusercontent.com/1537615/52606003-06002180-2e3f-11e9-83f2-21fc6212924a.gif" alt="Example of @cubetiq/antd-modal.">
 </a>
 </div>
 
-## 🌎 [Example](https://@cubetiq/antd-modal.netlify.app/)
+## 🌎 Example
 
 ## Required
 
@@ -108,7 +108,7 @@ Links:
 [package]: https://www.npmjs.com/package/@cubetiq/antd-modal
 [version-badge]: https://img.shields.io/npm/v/@cubetiq/antd-modal.svg?style=flat-square
 [license-badge]: https://img.shields.io/npm/l/@cubetiq/antd-modal.svg?style=flat-square
-[license]: https://github.com/sombochea/antd-modal/blob/master/LICENSE
+[license]: https://github.com/sombochea/antd-modal/blob/main/LICENSE
 [github-watch-badge]: https://img.shields.io/github/watchers/sombochea/antd-modal.svg?style=social
 [github-watch]: https://github.com/sombochea/antd-modal/watchers
 [github-star-badge]: https://img.shields.io/github/stars/sombochea/antd-modal.svg?style=social
