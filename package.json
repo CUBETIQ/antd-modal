@@ -7,7 +7,8 @@
         "build": "wsrun --stages build",
         "dev": "wsrun --exclude-missing dev",
         "start": "wsrun start",
-        "test-ci": "wsrun --exclude-missing test-ci"
+        "test-ci": "wsrun --exclude-missing test-ci",
+        "pub": "cd packages/antd-modal && yarn build && npm publish --access public"
     },
     "prettier": {
         "printWidth": 100,
