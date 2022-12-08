@@ -41,6 +41,11 @@ Modal from Ant Design, draggable, resizable.
 -   [ ] Better escape key management.
 -   [ ] Resize with option key.
 
+## ✨ Enhancements
+
+-   [x] Ant Design 5.x
+-   [ ] Modal `visible` to `open`
+
 ## 📦 Install
 
 ```bash
@@ -64,7 +69,7 @@ const ModalWithButton = () => {
     return (
         <>
             <Button onClick={onOk}>Open</Button>
-            <DraggableModal visible={visible} onOk={onOk} onCancel={onCancel}>
+            <DraggableModal open={visible} onOk={onOk} onCancel={onCancel}>
                 Body text.
             </DraggableModal>
         </>

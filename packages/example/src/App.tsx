@@ -19,7 +19,7 @@ function ModalWithButton(props: ModalWithButtonProps) {
             <Button onClick={onToggle} type={visible ? 'dashed' : 'primary'} style={{ margin: 10 }}>
                 {visible ? `Close ${props.title}` : `Open ${props.title}`}
             </Button>
-            <DraggableModal visible={visible} onOk={onOk} onCancel={onCancel} {...props}>
+            <DraggableModal open={visible} onOk={onOk} onCancel={onCancel} {...props}>
                 Body text.
             </DraggableModal>
         </>
@@ -41,9 +41,7 @@ const App = () => (
                 </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>
-                <a href="https://github.com/DylanVann/ant-design-draggable-modal">GitHub</a>
-                {' | '}
-                <a href="https://twitter.com/atomarranger">@atomarranger</a>
+                <a href="https://github.com/sombochea/antd-modal">GitHub</a>
             </Footer>
         </Layout>
     </DraggableModalProvider>
