@@ -51,23 +51,22 @@ function DraggableModalInnerNonMemo({
 
     const { zIndex, x, y, width, height } = modalState
 
-    const style: React.CSSProperties = useMemo(() => ({ ...modalStyle, top: y, left: x, height }), [
-        y,
-        x,
-        height,
-    ])
+    const style: React.CSSProperties = useMemo(
+        () => ({ ...modalStyle, top: y, left: x, height }),
+        [y, x, height],
+    )
 
     const onFocus = useCallback(() => dispatch({ type: 'focus', id }), [id, dispatch])
 
-    const onDragWithID = useCallback((args: any) => dispatch({ type: 'drag', id, ...args }), [
-        dispatch,
-        id,
-    ])
+    const onDragWithID = useCallback(
+        (args: any) => dispatch({ type: 'drag', id, ...args }),
+        [dispatch, id],
+    )
 
-    const onResizeWithID = useCallback((args: any) => dispatch({ type: 'resize', id, ...args }), [
-        dispatch,
-        id,
-    ])
+    const onResizeWithID = useCallback(
+        (args: any) => dispatch({ type: 'resize', id, ...args }),
+        [dispatch, id],
+    )
 
     const onMouseDrag = useDrag(x, y, onDragWithID)
     const onMouseResize = useResize(x, y, width, height, onResizeWithID)
@@ -84,7 +83,6 @@ function DraggableModalInnerNonMemo({
         ),
         [onMouseDrag, onFocus, title],
     )
-
     return (
         <Modal
             wrapClassName="ant-design-draggable-modal"
@@ -95,7 +93,7 @@ function DraggableModalInnerNonMemo({
             maskClosable={false}
             zIndex={zIndex}
             title={titleElement}
-            visible={visible}
+            open={visible}
             {...otherProps}
         >
             {children}

@@ -36,7 +36,7 @@ const App = () => (
                 </Breadcrumb>
                 <div style={{ background: '#fff', padding: 24 }}>
                     <ModalWithButton title="Modal A" />
-                    <ModalWithButton title="Modal B" initialWidth={500} initialHeight={100} />
+                    <ModalWithButton title="Modal B" initialWidth={500} initialHeight={300} />
                     <ModalWithButton title="Modal C" />
                 </div>
             </Content>
