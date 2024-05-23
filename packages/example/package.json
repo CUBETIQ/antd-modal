@@ -9,8 +9,8 @@
     "dependencies": {
         "react": "^18",
         "react-dom": "^18",
-        "@cubetiq/antd-modal": "*",
-        "antd": "^5"
+        "@cubetiq/antd-modal": "link:../antd-modal/dist",
+        "antd": "^5.17.0"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^1.0.7",
